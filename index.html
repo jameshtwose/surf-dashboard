@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Surf Dash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+        integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="mainbody">
+        <div id="home">
+            <h1>Surf Conditions Dashboard</h1>
+        </div>
+        <section class="spot">
+            <div id="katwijk">
+                <h2>Katwijk</h2>
+                <iframe width="700" height="600"
+                    src="https://www.surfline.com/surf-report/katwijk-aan-zee/584204204e65fad6a77095ef"></iframe>
+                <iframe width="700" height="600" src="https://www.youtube.com/embed/iMYgYh4hCko" title="YouTube
+                            video player" frameborder="0" allow="accelerometer;
+                            autoplay;
+                            clipboard-write; encrypted-media; gyroscope;
+                            picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <section class="spot">
+            <div id="scheveningen">
+                <h2>Scheveningen</h2>
+                <iframe width="700" height="600"
+                    src="https://www.surfline.com/surf-report/scheveningen/584204204e65fad6a77095f0"></iframe>
+                <iframe width="700" height="600" src="https://www.youtube.com/embed/A5kXiKzbBFs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="spot">
+            <div id="zandvoort">
+                <h2>Zandvoort</h2>
+                <iframe width="700" height="600"
+                    src="https://www.surfline.com/surf-report/zandvoort/584204204e65fad6a77095eb"></iframe>
+                <iframe width="700" height="600" src="https://www.youtube.com/embed/q0-DDh1zdY4"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+    </section>
+
+    <!-- Navigation bar section -->
+    <section id="info-bar">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg"> <a class="navbar-brand" href="https://services.jms.rocks/"><img
+                        src="https://services.jms.rocks/img/logo.png" /></a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary"><a data-scroll href="#home">Home</a></button>
+                    <button type="button" class="btn btn-secondary
+                            dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        Surf Spots
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end
+                            dropdown-menu-lg-start">
+                        <li><button class="dropdown-item" type="button"><a data-scroll
+                                    href="#katwijk">Katwijk</a></button></li>
+                        <li><button class="dropdown-item" type="button"><a data-scroll
+                                    href="#scheveningen">Scheveningen</a></button></li>
+                        <li><button class="dropdown-item" type="button"><a data-scroll
+                                    href="#zandvoort">Zandvoort</a></button></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </section>
+    <!-- Smooth scroll -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+
+</html>
